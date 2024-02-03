@@ -7,7 +7,6 @@ export default function Home() {
   return (
     <section className="text-center min-h-screen flex flex-col justify-center items-center">
       <Image
-        id="image-anchor"
         src="/meledak.png"
         width={6021}
         height={5502}
