@@ -1,17 +1,18 @@
 import { MdHome } from "react-icons/md";
 import Link from "next/link";
 
+import { twMerge } from "tailwind-merge";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <section className="relative text-center min-h-screen flex flex-col justify-center items-center">
+    <section className="overflow-hidden relative text-center min-h-screen flex flex-col justify-center items-center">
       <Image
         src="/404/gelombang_atas.png"
         width={2880}
         height={422}
         alt="gelombang atas"
-        className="absolute top-0"
+        className="absolute top-0 lg:-top-10 xl:-top-20"
       />
 
       <Image
@@ -19,10 +20,38 @@ export default function Home() {
         width={2880}
         height={392}
         alt="gelombang bawah"
-        className="-z-10 absolute bottom-0"
+        className="-z-10 absolute bottom-0 lg:-bottom-10 xl:-bottom-20"
       />
 
       <div className="relative">
+        <Image
+          src="/meledak.png"
+          width={2880}
+          height={5502}
+          alt="gelombang bawah"
+          className={twMerge(
+            "z-10 absolute top-0",
+            "w-[25%] left-10 -top-5",
+            "sm:w-[20%] sm:left-20",
+            "md:left-36 md:-top-12",
+            "xl:-top-10 xl:left-40 xl:w-[15%]"
+          )}
+        />
+
+        <Image
+          src="/loading.png"
+          width={2880}
+          height={2510}
+          alt="gelombang bawah"
+          className={twMerge(
+            "z-10 absolute bottom-0",
+            "w-[20%] right-10",
+            "sm:w-[15%] sm:right-28",
+            "md:right-40 md:w-[12%]",
+            "xl:-bottom-0 xl:right-40 xl:w-[12%]"
+          )}
+        />
+
         <Image
           src="/404/back.png"
           width={864}
