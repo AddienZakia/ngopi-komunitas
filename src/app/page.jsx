@@ -14,10 +14,10 @@ export default function Home() {
         className="w-[50%] min-[500px]:w-[40%] md:w-[20%]"
       />
 
-      <h1 className="mt-3 max-[400px]:text-4xl text-5xl font-bold">
+      <h1 className="mt-3 max-[400px]:text-4xl text-5xl font-bold text-merah_nogen">
         Coming Soon!
       </h1>
-      <p className="max-[400px]:w-[90%] w-[80%] mt-3">
+      <p className="max-[400px]:w-[90%] w-[80%] mt-3 text-merah_nogen">
         Kita lagi siapin sesuatu yang keren banget nih! Stay tuned ya!
       </p>
 

@@ -1,28 +1,53 @@
-import { FaInstagram } from "react-icons/fa6";
+import { MdHome } from "react-icons/md";
 import Link from "next/link";
 
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <section className="text-center min-h-screen flex flex-col justify-center items-center">
+    <section className="relative text-center min-h-screen flex flex-col justify-center items-center">
       <Image
-        src="/loading.png"
+        src="/404/gelombang_atas.png"
         width={2880}
-        height={2510}
-        alt="error"
-        className="w-[50%] min-[500px]:w-[40%] md:w-[15%]"
+        height={422}
+        alt="gelombang atas"
+        className="absolute top-0"
       />
 
-      <h1 className="mt-3 max-[400px]:text-4xl text-5xl font-bold">
-        Not Found
-      </h1>
-      <p className="max-[400px]:w-[90%] w-[80%] xl:w-[25%] md:w-[40%] mt-3">
-        Maaf halaman yang anda cari tidak tersedia. Silahkan kembali ke beranda
-      </p>
+      <Image
+        src="/404/gelombang_bawah.png"
+        width={2880}
+        height={392}
+        alt="gelombang bawah"
+        className="-z-10 absolute bottom-0"
+      />
 
-      <Link href="/ ">
-        <div className="flex justify-center items-center text-cream_nogen bg-merah_nogen mt-3 px-4 py-3 rounded-lg transition duration-200 hover:bg-merah_nogen/90 cursor-pointer">
+      <div className="relative">
+        <Image
+          src="/404/back.png"
+          width={864}
+          height={541}
+          alt="back"
+          className="w-[70%] sm:w-[60%] md:w-[50%] lg:w-[50%] xl:w-[50%] mx-auto"
+        />
+
+        <div className="absolute top-0 flex justify-center items-center w-full h-full">
+          <h1
+            className="text-cream_nogen font-bold text-6xl min-[500px]:text-[80px] md:text-[96px] xl:text-[126px] rotate-2"
+            style={{
+              textShadow: "-4.5px 3px 0px rgba(0, 0, 0, 1)",
+            }}
+          >
+            404
+          </h1>
+        </div>
+      </div>
+      <p className="my-5 font-medium w-[80%] md:text-xl">
+        Maaf halaman yang kamu cari tidak ditemukan
+      </p>
+      <Link href="/">
+        <div className="z-20 flex justify-center items-center space-x-3 text-cream_nogen bg-merah_nogen px-4 py-3 rounded-lg transition duration-200 hover:bg-merah_nogen/90 cursor-pointer">
+          <MdHome className="text-3xl" />
           <p>Kembali Ke Beranda</p>
         </div>
       </Link>
