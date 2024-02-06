@@ -6,8 +6,7 @@ const nextConfig = {
     return [
       {
         source: "/daftar",
-        destination:
-          "https://nextjs.org/docs/pages/api-reference/next-config-js/redirects",
+        destination: "https://www.instagram.com/ngopi.komunitas/",
         permanent: true,
       },
     ];
