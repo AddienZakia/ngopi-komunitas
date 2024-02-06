@@ -6,7 +6,7 @@ const nextConfig = {
     return [
       {
         source: "/daftar",
-        destination: "https://www.instagram.com/ngopi.komunitas/",
+        destination: "http://its.id/m/RSVPNgopiKomunitas",
         permanent: true,
       },
     ];
