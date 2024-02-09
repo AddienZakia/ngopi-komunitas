@@ -73,10 +73,10 @@ export default function About() {
           <span className="text-merah_nogen">environmental challenges</span>.
         </p>
 
-        <Link href="/">
+        <Link href="https://www.instagram.com/ngopi.komunitas/">
           <div className="mx-auto xl:mx-0 mt-5 z-20 flex justify-center items-center space-x-3 text-cream_nogen bg-merah_nogen px-4 py-3 rounded-lg transition duration-200 hover:bg-merah_nogen/90 cursor-pointer w-fit">
             <FaInstagram className="text-3xl" />
-            <p>Kembali Ke Beranda</p>
+            <p>Follow Our Instagram</p>
           </div>
         </Link>
       </div>
