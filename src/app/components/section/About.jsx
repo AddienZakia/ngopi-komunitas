@@ -12,7 +12,10 @@ export default function About() {
   }, []);
 
   return (
-    <section className="overflow-hidden relative flex flex-col justify-center items-center xl:flex-row xl:justify-center xl:items-start py-40 max-[500px]:px-8 px-10 md:px-20 lg:px-36 xl:px-32 xl:space-x-20 xl:space-y-0 space-y-10">
+    <section
+      id="about"
+      className="overflow-hidden relative flex flex-col justify-center items-center xl:flex-row xl:justify-center xl:items-start py-40 max-[500px]:px-8 px-10 md:px-20 lg:px-36 xl:px-32 xl:space-x-20 xl:space-y-0 space-y-10"
+    >
       {/* particle */}
       <div>
         <Image

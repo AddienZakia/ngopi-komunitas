@@ -10,7 +10,10 @@ export default function Theme() {
   }, []);
 
   return (
-    <section className="relative py-32 pt-72 lg:pt-0 flex flex-col-reverse lg:flex-row justify-between items-center lg:mt-32">
+    <section
+      id="theme"
+      className="relative py-32 pt-72 lg:pt-0 flex flex-col-reverse lg:flex-row justify-between items-center lg:mt-32"
+    >
       <div
         className="relative text-cream_nogen bg-hitam_nogen py-12 px-10 w-full lg:w-[70%]"
         data-aos="fade-right"

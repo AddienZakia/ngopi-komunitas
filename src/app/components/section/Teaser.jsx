@@ -9,7 +9,7 @@ export default function Teaser() {
   }, []);
 
   return (
-    <section className="relative bg-merah_nogen  pt-8 pb-24 -z-20">
+    <section id="teaser" className="relative bg-merah_nogen  pt-8 pb-24 -z-20">
       <div className="w-full absolute -bottom-5 z-20 border-2 border-cream_nogen mb-10"></div>
       <Image
         src="/teaser/hitam.png"

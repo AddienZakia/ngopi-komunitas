@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { clsxm } from "./utils";
 import Image from "next/image";
+import Link from "next/link";
 
 import { FaBars } from "react-icons/fa";
 
@@ -40,7 +41,7 @@ export default function Header() {
             </div>
           </div>
 
-          <div></div>
+          <div className="w-[8%]"></div>
           <ul
             className={clsxm(
               "z-40 md:static flex flex-col md:flex-row md:items-center md:justify-center md:space-x-10",
@@ -51,25 +52,30 @@ export default function Header() {
             )}
           >
             <li>
-              <a href="#">About</a>
+              <Link href="#about">About</Link>
             </li>
             <li>
-              <a href="#">Teaser</a>
+              <Link href="#teaser">Teaser</Link>
             </li>
             <li>
-              <a href="#">Theme</a>
+              <Link href="#theme">Theme</Link>
             </li>
-            <li className="md:hidden font-medium bg-cream_nogen text-hitam_nogen px-5 py-2 rounded-lg cursor-pointer hover:bg-cream_nogen/90 transition duration-200">
-              <a href="#">Register</a>
-            </li>
+            <Link className="md:hidden" href="/daftar">
+              <li className="md:hidden font-medium bg-cream_nogen text-hitam_nogen px-5 py-2 rounded-lg cursor-pointer hover:bg-cream_nogen/90 transition duration-200">
+                <p>Register</p>
+              </li>
+            </Link>
           </ul>
-          <div
-            className={clsxm(
-              "hidden md:block font-medium bg-cream_nogen text-hitam_nogen px-5 py-2 rounded-lg cursor-pointer hover:bg-cream_nogen/90 transition duration-200"
-            )}
-          >
-            Register
-          </div>
+
+          <Link href="#rsvp">
+            <div
+              className={clsxm(
+                "hidden md:block font-medium bg-cream_nogen text-hitam_nogen px-5 py-2 rounded-lg cursor-pointer hover:bg-cream_nogen/90 transition duration-200"
+              )}
+            >
+              Register
+            </div>
+          </Link>
 
           <FaBars
             className="z-10 text-2xl md:hidden"

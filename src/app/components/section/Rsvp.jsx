@@ -13,6 +13,7 @@ export default function Rsvp() {
 
   return (
     <section
+      id="rsvp"
       className={clsxm(
         "overflow-hidden relative bg-hitam_nogen text-cream_nogen flex flex-col md:flex-row justify-center items-center px-10 lg:px-20 py-12 lg:py-20",
         "space-y-5 md:space-y-0 md:space-x-10 border-b-4 border-merah_nogen xl:space-x-20"
@@ -91,9 +92,9 @@ export default function Rsvp() {
             </div>
           </Link>
 
-          <Link href="/">
+          {/* <Link href="/">
             <p>Feedback</p>
-          </Link>
+          </Link> */}
         </div>
       </div>
     </section>
