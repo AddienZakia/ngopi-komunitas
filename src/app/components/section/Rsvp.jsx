@@ -59,7 +59,7 @@ export default function Rsvp() {
         <div className="flex justify-center items-center md:justify-start space-x-5 mt-5">
           <Link href="/daftar">
             <div className="mx-auto xl:mx-0 z-20 flex justify-center items-center space-x-3 text-cream_nogen bg-merah_nogen px-4 py-3 rounded-lg transition duration-200 hover:bg-merah_nogen/90 cursor-pointer w-fit">
-              <p>Register Your</p>
+              <p>Register Yours</p>
             </div>
           </Link>
 
