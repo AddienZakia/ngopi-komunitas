@@ -27,7 +27,7 @@ export default function Hero() {
         width={768}
         height={400}
         alt="motor"
-        className="mx-auto inset-x-0 absolute bottom-0 min-[550px]:w-[80%] md:w-[60%] xl:w-[50%]"
+        className="opacity-80 mx-auto inset-x-0 absolute bottom-0 min-[550px]:w-[80%] md:w-[60%] xl:w-[50%]"
       />
     </section>
   );
