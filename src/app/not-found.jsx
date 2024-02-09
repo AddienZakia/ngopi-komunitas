@@ -72,12 +72,12 @@ export default function Home() {
         </div>
       </div>
       <p className="my-5 font-medium w-[80%] md:text-xl">
-        Maaf halaman yang kamu cari tidak ditemukan
+        Sorry, the page you were looking for could not be found
       </p>
       <Link href="/">
         <div className="z-20 flex justify-center items-center space-x-3 text-cream_nogen bg-merah_nogen px-4 py-3 rounded-lg transition duration-200 hover:bg-merah_nogen/90 cursor-pointer">
           <MdHome className="text-3xl" />
-          <p>Kembali Ke Beranda</p>
+          <p>Back to main</p>
         </div>
       </Link>
     </section>

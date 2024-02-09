@@ -9,5 +9,13 @@
 }
 
 body {
+  @apply overflow-x-hidden;
+}
+
+#header ul li a {
+  @apply text-2xl max-[400px]:text-lg md:text-xl hover:text-cream_nogen/80 transition duration-200;
+}
+
+body {
   @apply bg-cream_nogen;
 }
