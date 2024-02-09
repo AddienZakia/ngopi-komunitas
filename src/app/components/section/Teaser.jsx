@@ -1,8 +1,13 @@
 "use client";
 import React from "react";
+import Aos from "aos";
 import Image from "next/image";
 
 export default function Teaser() {
+  React.useEffect(() => {
+    Aos.init();
+  }, []);
+
   return (
     <section className="relative bg-merah_nogen  pt-8 pb-24 -z-20">
       <div className="w-full absolute -bottom-5 z-20 border-2 border-cream_nogen mb-10"></div>
@@ -20,6 +25,9 @@ export default function Teaser() {
         height={442}
         alt="hitam"
         className="absolute top-10 xl:w-[15%] sm:w-[18%] w-[25%]"
+        data-aos="zoom-out"
+        data-aos-duration="500"
+        data-aos-delay="300"
       />
 
       <h1
@@ -27,6 +35,9 @@ export default function Teaser() {
         style={{
           textShadow: "-4.5px 3px 0px rgba(0, 0, 0, 1)",
         }}
+        data-aos="fade-up"
+        data-aos-duration="500"
+        data-aos-delay="100"
       >
         Our Teaser
       </h1>

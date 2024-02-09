@@ -2,10 +2,15 @@
 import React from "react";
 import { FaInstagram } from "react-icons/fa";
 import Link from "next/link";
+import Aos from "aos";
 
 import Image from "next/image";
 
 export default function About() {
+  React.useEffect(() => {
+    Aos.init();
+  }, []);
+
   return (
     <section className="overflow-hidden relative flex flex-col justify-center items-center xl:flex-row xl:justify-center xl:items-start py-40 max-[500px]:px-8 px-10 md:px-20 lg:px-36 xl:px-32 xl:space-x-20 xl:space-y-0 space-y-10">
       {/* particle */}
@@ -16,6 +21,9 @@ export default function About() {
           height={820}
           alt="cup"
           className="-z-10 max-[400px]:w-[60%] w-[40%] sm:w-[35%] md:w-[30%] lg:w-[25%] xl:w-[20%] absolute left-0 xl:-bottom-16 lg:-bottom-20 md:-bottom-16 sm:-bottom-16 -bottom-12"
+          data-aos="zoom-out"
+          data-aos-duration="500"
+          data-aos-delay="200"
         />
 
         <Image
@@ -24,10 +32,18 @@ export default function About() {
           height={292}
           alt="coffee"
           className="max-[400px]:w-[35%] w-[30%] sm:w-[25%] md:w-[20%] lg:w-[15%] xl:w-[10%] absolute top-5 right-0"
+          data-aos="zoom-out"
+          data-aos-duration="500"
+          data-aos-delay="200"
         />
       </div>
 
-      <div className="-space-y-8 max-[350px]:-space-y-5 border-y-4 border-hitam_nogen max-[550px]:px-5 px-10 pb-8">
+      <div
+        className="-space-y-8 max-[350px]:-space-y-5 border-y-4 border-hitam_nogen max-[550px]:px-5 px-10 pb-8"
+        data-aos="fade-left"
+        data-aos-duration="500"
+        data-aos-delay="100"
+      >
         <h1 className="max-[550px]:text-[96px] max-[350px]:text-[70px] max-[440px]:text-[86px] text-[128px] font-extrabold">
           About
         </h1>
@@ -35,7 +51,7 @@ export default function About() {
           Ngopi Komunitas
         </h1>
       </div>
-      <div className="">
+      <div data-aos="fade-left" data-aos-duration="500" data-aos-delay="100">
         <p className="text-xl sm:text-2xl text-justify indent-10 font-medium">
           <span className="text-merah_nogen">Ngopi komunitas</span> is a talk
           show event attended by automotive communities with the theme{" "}
