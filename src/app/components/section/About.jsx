@@ -54,7 +54,7 @@ export default function About() {
           Ngopi Komunitas
         </h1>
       </div>
-      <div data-aos="fade-left" data-aos-duration="500" data-aos-delay="100">
+      <div data-aos="fade-right" data-aos-duration="500" data-aos-delay="100">
         <p className="text-xl sm:text-2xl text-justify indent-10 font-medium">
           <span className="text-merah_nogen">Ngopi komunitas</span> is a talk
           show event attended by automotive communities with the theme{" "}
