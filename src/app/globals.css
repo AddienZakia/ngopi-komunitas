@@ -14,7 +14,7 @@ body {
 }
 
 #header ul li a {
-  @apply text-2xl max-[400px]:text-lg md:text-xl hover:text-cream_nogen/80 transition duration-200;
+  @apply text-2xl max-[350px]:text-lg md:text-xl hover:text-cream_nogen/80 transition duration-200;
 }
 
 body {

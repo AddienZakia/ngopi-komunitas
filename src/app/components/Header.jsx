@@ -47,18 +47,24 @@ export default function Header() {
               "z-40 md:static flex flex-col md:flex-row md:items-center md:justify-center md:space-x-10",
               "absolute bg-hitam_nogen top-0 bottom-0 px-16 py-10 space-y-5 md:space-y-0 transition-all duration-200",
               "md:px-0 md:py-0",
-              "max-[400px]:px-12",
+              "max-[400px]:px-16",
               active ? "left-0" : "-left-96"
             )}
           >
             <li>
-              <Link href="#about">About</Link>
+              <Link href="#about" onClick={() => setactive(false)}>
+                About
+              </Link>
             </li>
             <li>
-              <Link href="#teaser">Teaser</Link>
+              <Link href="#teaser" onClick={() => setactive(false)}>
+                Teaser
+              </Link>
             </li>
             <li>
-              <Link href="#theme">Theme</Link>
+              <Link href="#theme" onClick={() => setactive(false)}>
+                Theme
+              </Link>
             </li>
             <Link className="md:hidden" href="/daftar">
               <li className="md:hidden font-medium bg-cream_nogen text-hitam_nogen px-5 py-2 rounded-lg cursor-pointer hover:bg-cream_nogen/90 transition duration-200">
