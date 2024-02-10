@@ -9,22 +9,25 @@ export default function Teaser() {
   }, []);
 
   return (
-    <section id="teaser" className="relative bg-merah_nogen  pt-8 pb-24 -z-20">
+    <section
+      id="teaser"
+      className="relative pt-8 pb-24 bg-[url('/teaser/background.png')] bg-cover"
+    >
       <div className="w-full absolute -bottom-5 z-20 border-2 border-cream_nogen mb-10"></div>
-      <Image
+      {/* <Image
         src="/teaser/hitam.png"
         width={2880}
         height={802}
         alt="hitam"
-        className="absolute bottom-0 h-[60%] -z-20"
-      />
+        className="absolute bottom-0 h-[60%] "
+      /> */}
 
       <Image
         src="/teaser/gambar.png"
         width={550}
         height={442}
         alt="hitam"
-        className="-z-10 absolute top-10 xl:w-[15%] sm:w-[18%] w-[25%]"
+        className="z-10 absolute top-10 xl:w-[15%] sm:w-[18%] w-[25%]"
         data-aos="zoom-out"
         data-aos-duration="500"
         data-aos-delay="300"
@@ -47,7 +50,7 @@ export default function Teaser() {
         width="1920"
         height="1020"
         controls
-        className="Z-10 w-[80%] sm:w-[70%] md:w-[60%] lg:w-[50%] mx-auto mt-10"
+        className="z-10 w-[80%] sm:w-[70%] md:w-[60%] lg:w-[50%] mx-auto mt-10"
       >
         <source src="/teaser/TEASER.mp4" type="video/mp4" />
       </video>
