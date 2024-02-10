@@ -16,7 +16,7 @@ export default function Teaser() {
         width={2880}
         height={802}
         alt="hitam"
-        className="absolute bottom-0 h-[60%] -z-10"
+        className="absolute bottom-0 h-[60%] -z-20"
       />
 
       <Image
@@ -24,7 +24,7 @@ export default function Teaser() {
         width={550}
         height={442}
         alt="hitam"
-        className="absolute top-10 xl:w-[15%] sm:w-[18%] w-[25%]"
+        className="-z-10 absolute top-10 xl:w-[15%] sm:w-[18%] w-[25%]"
         data-aos="zoom-out"
         data-aos-duration="500"
         data-aos-delay="300"
@@ -42,15 +42,15 @@ export default function Teaser() {
         Our Teaser
       </h1>
 
-      <div className="bg-white rounded-md w-[80%] h-[300px] sm:w-[70%] md:w-[60%] lg:w-[50%] mx-auto mt-10"></div>
-      {/* <video
+      {/* <div className="bg-white rounded-md w-[80%] h-[300px] sm:w-[70%] md:w-[60%] lg:w-[50%] mx-auto mt-10"></div> */}
+      <video
         width="1920"
         height="1020"
         controls
-        className="w-[80%] sm:w-[70%] md:w-[60%] lg:w-[50%] mx-auto mt-10"
+        className="Z-10 w-[80%] sm:w-[70%] md:w-[60%] lg:w-[50%] mx-auto mt-10"
       >
-        <source src="/teaser.mp4" type="video/mp4" />
-      </video> */}
+        <source src="/teaser/TEASER.mp4" type="video/mp4" />
+      </video>
     </section>
   );
 }
