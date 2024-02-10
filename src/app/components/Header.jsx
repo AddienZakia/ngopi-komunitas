@@ -18,7 +18,7 @@ export default function Header() {
       <div
         onClick={() => setactive((pre) => !pre)}
         className={clsxm(
-          "md:hidden absolute inset-0 w-full h-full bg-hitam_nogen/40 transition-all duration-200",
+          "z-60 md:hidden absolute inset-0 w-full h-full bg-hitam_nogen/40 transition-all duration-200",
           active ? "block" : "hidden"
         )}
       ></div>
@@ -27,7 +27,7 @@ export default function Header() {
       <div className="bg-hitam_nogen py-3">
         {/* logo */}
         <div className="bg-hitam_nogen border-y-2 border-cream_nogen px-8 md:px-12 py-5 flex justify-between items-center">
-          <div className="z-30 absolute top-0 bg-cream_nogen flex flex-col justify-center items-center px-2 py-5 rounded-bl-xl rounded-br-xl">
+          <div className="z-20 absolute top-0 bg-cream_nogen flex flex-col justify-center items-center px-2 py-5 rounded-bl-xl rounded-br-xl">
             <Image
               src="/header/logo_header.png"
               width={130}

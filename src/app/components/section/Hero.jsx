@@ -11,7 +11,7 @@ export default function Hero() {
   return (
     <section
       id="hero-anchor"
-      className="relative max-[320px]:h-[140vh] h-[110vh] max-[550px]:h-[105vh] min-[550px]:h-[100vh] lg:h-[120vh] xl:h-screen bg-merah_nogen  text-cream_nogen py-20 pb-32 lg:py-20 px-3 text-center space-y-3"
+      className="-z-10 relative max-[320px]:h-[140vh] h-[110vh] max-[550px]:h-[105vh] min-[550px]:h-[100vh] lg:h-[120vh] xl:h-screen bg-merah_nogen  text-cream_nogen py-20 pb-32 lg:py-20 px-3 text-center space-y-3"
     >
       <h1
         className="text-xl lg:text-3xl font-semibold"
